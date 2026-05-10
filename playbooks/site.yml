@@ -1,0 +1,24 @@
+---
+- name: Base Server Bootstrap
+  hosts: local
+  become: yes
+
+  tasks:
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade system packages
+      apt:
+        upgrade: dist
+
+    - name: Install basic tools
+      apt:
+        name:
+          - curl
+          - git
+          - vim
+          - htop
+          - net-tools
+        state: present
