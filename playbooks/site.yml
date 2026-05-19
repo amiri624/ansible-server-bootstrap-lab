@@ -1,4 +1,4 @@
----
+
 - name: Base Server Bootstrap
   hosts: local
   become: yes
