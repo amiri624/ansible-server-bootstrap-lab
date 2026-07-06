@@ -62,7 +62,9 @@ ansible-server-bootstrap-lab/
 ├── .gitignore
 └── README.md
 ```
+
 ---
+
 ```bash
 ansible-playbook playbook/site.yml
 ```
